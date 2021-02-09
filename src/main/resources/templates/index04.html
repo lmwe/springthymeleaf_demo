@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index02</title>
+</head>
+<table>
+    信息:<input type="text" th:value="${message}">
+    <span th:text="'张三:'+${message}"></span>
+    <span th:text="|张三:${message}|"></span>
+
+
+</table>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index02</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/pages-cart.css" th:href="@{/css/pages-cart.css}">
+</head>
+<body>
+
+<span th:text="${#dates.format(date,'yyyy年MM月dd日 hh:mm:ss')}"/>
+<span th:text="${#numbers.formatDecimal(number,1,2)}"/>
+<span th:text="${#strings.abbreviate(str,50)}"/>
+<span th:text="${#strings.substring(str,1,40)}"/>
+<span th:text="${#strings.isEmpty(str)}"/>
+</body>
+</html>

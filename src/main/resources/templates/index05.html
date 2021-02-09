@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index02</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/pages-cart.css" th:href="@{/css/pages-cart.css}">
+</head>
+<table>
+    <h1 th:if="${flag=='yes'}">浮山县</h1>
+    <h1 th:unless="${flag=='yes'}">南位村</h1>
+</table>
+<div th:switch="${menu}">
+    <span th:case="admin" >user is admin </span>
+    <span th:case="${manager}">user is manager</span>
+</div>
+<div th:insert="~{footer :: copy}"></div><br>
+<div th:include="~{footer :: copy}"></div><br>
+<div th:replace="~{footer :: copy}"></div><br>
+
+</body>
+</html>
